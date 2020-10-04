@@ -1,0 +1,28 @@
+.cardImage{
+    width: 270px;
+    height: 320px;
+    
+
+}
+
+.cardImage.hover{
+    text-decoration:none;
+}
+.text{
+    text-align: center;
+    color: black;
+   
+    margin: 0px;
+   
+}
+
+
+.cardBody{
+    margin-top:7%;
+    padding-left:40px;
+}
+
+
+.register.hover{
+    text-decoration: none;
+}

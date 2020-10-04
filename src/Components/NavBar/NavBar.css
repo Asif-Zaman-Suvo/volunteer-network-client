@@ -1,0 +1,26 @@
+.logo{
+    width: 202.81px;
+    height: 60px;
+    margin-left: 88px;
+    
+
+
+}
+
+.navBar , .navBar:hover{
+    color:black;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size:16px;
+    text-decoration: none;
+}
+
+.buttonNav Button{
+    padding: 7px 25px 7px 25px;
+  
+}
+
+.buttonNav{
+    margin-left: 60px;
+}
