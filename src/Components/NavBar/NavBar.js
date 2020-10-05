@@ -8,7 +8,7 @@ import './NavBar.css';
 const NavBar = () => {
   return (
 
-      <Navbar collapseOnSelect expand="md" bg="transparent" variant="light" sticky="top" >
+      <Navbar collapseOnSelect expand="md" bg="transparent" variant="light" >
       <Container fluid>
           <Navbar.Brand >
             <Link to="/">

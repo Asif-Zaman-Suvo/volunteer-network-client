@@ -22,24 +22,20 @@ const Register = () => {
 
 
     const onSubmit = data => {
-        history.push('/registration')
-        console.log(data, "hello this is form")
-        const userDetails = {...loggedInUser, details: data, registrationTime: new Date() }
-
-
-
+        history.push(`/registration/${loggedInUser.name}`)
+        // console.log(data, "hello this is form")
+        
+        const userDetails = { ...loggedInUser, description:data, registrationTime: new Date(), event:routeChange.name }
 
         fetch('http://localhost:5000/addInfo', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(userDetails)
 
-
         })
-
             .then(res => res.json())
             .then(data => {
-               
+
                 if (data) {
                     alert('Congratulations! Successfully Registered')
                 }
@@ -68,7 +64,7 @@ const Register = () => {
                                 <Form.Control className="inputText" type="date" selected={newDate} onChange={dt => setNewDate(dt)} placeholder="Date" required />
 
                                 <Form.Control className="inputText" type="text" placeholder="Description" ref={register({ required: true })} />
-
+ 
                                 <Form.Control className="inputText" type="text" defaultValue={routeChange.name} ref={register({ required: true })} />
 
                             </Form.Group>
